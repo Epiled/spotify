@@ -1,45 +1,47 @@
 /* ========= Layout ========= */
-html, body, .capa{
+html,
+body,
+.capa {
 	height: 100%;
 	overflow: auto;
 }
 
 body {
 	background: url('imagens/capa.png'),
-				url('imagens/ruido.png'),
-				linear-gradient(50deg,#ff4169,#7c26f8);
+		url('imagens/ruido.png'),
+		linear-gradient(50deg, #ff4169, #7c26f8);
 	background-attachment: fixed;
-	font-family: Impact,Arial,sans-serif;
+	font-family: Impact, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
 /* ========= Seção Serviços ========= */
-#servicos{
+#servicos {
 	background: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.albuns{
+.albuns {
 	padding: 10px 0px 10px 0px;
 }
 
 /* ========= Seção Serviços 2 ========= */
-.rotation{
+.rotation {
 	transform: rotate(30deg);
 	-ms-transform: rotate(30deg);
 	-webkit-transform: rotate(30deg);
 	padding-left: 80px;
 }
 
-#recursos{
+#recursos {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: white;
 }
 
 /* ========= Barra de Navegação ========= */
-.img-logo{
+.img-logo {
 	height: 40px;
 	width: 132px;
 	display: block;
@@ -48,40 +50,42 @@ body {
 	color: transparent;
 }
 
-nav.navbar-transparente{
+nav.navbar-transparente {
 	padding: 15px 0px;
 	background: rgba(0, 0, 0, 0.6);
 	border: none;
 }
 
-.navbar-brand{
+.navbar-brand {
 	padding: 5px 7px;
 }
 
-.divisor{
+.divisor {
 	width: 1px;
 	height: 16px;
 	background: white;
 	margin: 16px 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a, footer .nav a {
+.navbar-inverse .navbar-nav>li>a,
+footer .nav a {
 	color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+.navbar-inverse .navbar-nav>li>a:hover,
+footer .nav a:hover {
 	color: #9bf0e1;
 	background: none;
 }
 
 /* ========= Imagem da Capa ========= */
-.capa{
+.capa {
 	/*border: 1px solid red;*/
 	display: table;
 	width: 100%;
 }
 
-.texto-capa{
+.texto-capa {
 	text-align: center;
 	color: white;
 	display: table-cell;
@@ -89,7 +93,7 @@ nav.navbar-transparente{
 }
 
 /* ========= Rodape ========= */
-footer{
+footer {
 	background: #000;
 	padding: 50px 0px 20px 0px;
 	position: relative;
@@ -128,13 +132,14 @@ h3 {
 	font-family: Arial;
 }
 
-#servicos h2, #servicos h3 {
+#servicos h2,
+#servicos h3 {
 	color: #7c25f8;
 
 }
 
-#servicos h3{
-	padding-top: 10px;	
+#servicos h3 {
+	padding-top: 10px;
 }
 
 p {
@@ -142,12 +147,12 @@ p {
 	font-family: "Arial";
 }
 
-#recursos h3{
+#recursos h3 {
 	color: #9bf0e1;
 }
 
 /* ========= Botões ========= */
-.btn-custom{
+.btn-custom {
 	color: white;
 	padding: 10px 35px;
 	text-transform: uppercase;
@@ -157,20 +162,20 @@ p {
 	-moz-border-radius: 500px;
 }
 
-.btn-roxo{
+.btn-roxo {
 	background: #7c25f8;
 }
 
-.btn-roxo:hover{
+.btn-roxo:hover {
 	background: #6207e3;
 	color: white;
 }
 
-.btn-branco{
+.btn-branco {
 	border: 2px solid white;
 }
 
-.btn-branco:hover{
+.btn-branco:hover {
 	background: white;
 	color: black;
 }
@@ -182,18 +187,19 @@ p {
 		font-size: 50px;
 	}
 
-	.btn-custom{
+	.btn-custom {
 		margin: 10px 15px;
 	}
 
-	.test{
+	.test {
 		padding-bottom: 30px;
 	}
 
-	.test2{
+	.test2 {
 		padding-bottom: 10px;
 	}
-	.test3{
+
+	.test3 {
 		padding-top: 0px;
 	}
 }
@@ -204,19 +210,19 @@ p {
 		font-size: 70px;
 	}
 
-	.btn-custom{
+	.btn-custom {
 		margin: 0px 15px;
 	}
 
-	.test{
+	.test {
 		padding-bottom: 30px;
 	}
 
-	.test2{
+	.test2 {
 		padding-bottom: 10px;
 	}
 
-	.test3{
+	.test3 {
 		padding-top: 15px;
 	}
 }
@@ -226,16 +232,18 @@ p {
 	h1 {
 		font-size: 80px;
 	}
-	.test{
+
+	.test {
 		padding-bottom: 0px;
 	}
 
-	.test2{
+	.test2 {
 		padding-bottom: 0px;
 	}
 
-	.test3{
-	padding-top: 30px;
+	.test3 {
+		padding-top: 30px;
+	}
 }
 
 /* lg */
@@ -244,8 +252,9 @@ p {
 		font-size: 100px;
 	}
 
-	.test3{
-	padding-top: 0px;
+	.test3 {
+		padding-top: 0px;
 	}
 }
+
 /* Fim Media Queries */
