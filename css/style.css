@@ -7,8 +7,8 @@ body,
 }
 
 body {
-	background: url('../imagens/capa.png'),
-		url('../imagens/ruido.png'),
+	background: url('../imagens/capa.webp'),
+		url('../imagens/ruido.webp'),
 		linear-gradient(50deg, #ff4169, #7c26f8);
 	background-attachment: fixed;
 	font-family: Impact, Arial, sans-serif;
