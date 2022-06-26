@@ -7,7 +7,7 @@ body,
 }
 
 body {
-	background: url('imagens/capa.png'),
+	background: url('../imagens/capa.png'),
 		url('imagens/ruido.png'),
 		linear-gradient(50deg, #ff4169, #7c26f8);
 	background-attachment: fixed;
@@ -45,7 +45,7 @@ body {
 	height: 40px;
 	width: 132px;
 	display: block;
-	background: url('imagens/spotify.svg') no-repeat;
+	background: url('../imagens/spotify.svg') no-repeat;
 	background-size: contain;
 	color: transparent;
 }
