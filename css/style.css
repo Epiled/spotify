@@ -105,20 +105,20 @@ footer {
 
 /* ========= Tipografia ========= */
 h1 {
-	font-weight: 900px;
+	font-weight: 900;
 	letter-spacing: 0.01em;
 	margin-bottom: 50px;
 }
 
 h2 {
 	font-size: 50px;
-	font-weight: 700px;
+	font-weight: 700;
 	letter-spacing: -0.04em;
 }
 
 h3 {
 	font-size: 35px;
-	font-weight: 700px;
+	font-weight: 700;
 	letter-spacing: 0.00em;
 }
 
@@ -129,7 +129,7 @@ h3 {
 }
 
 #rodape ul {
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 }
 
 #servicos h2,
@@ -144,7 +144,7 @@ h3 {
 
 p {
 	font-weight: 550;
-	font-family: "Arial";
+	font-family: Arial, sans-serif;
 }
 
 #recursos h3 {
