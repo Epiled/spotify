@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Circular";
+	src: url('../font/Circular/CircularStd-Medium.otf');
+	font-display: swap;
+}
 /* ========= Layout ========= */
 html,
 body,
@@ -11,7 +16,7 @@ body {
 		url('../imagens/ruido.webp'),
 		linear-gradient(50deg, #ff4169, #7c26f8);
 	background-attachment: fixed;
-	font-family: Impact, Arial, sans-serif;
+	font-family: Circular, Impact, Arial, sans-serif;
 	overflow-x: hidden;
 }
 
@@ -23,7 +28,27 @@ body {
 }
 
 .albuns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 10px 0px 10px 0px;
+}
+
+.album {
+	width: 100%;
+    height: auto;
+}
+
+.album:nth-child(even) {
+	padding-bottom: 30px;
+}
+
+.album:nth-child(odd) {
+	padding-bottom: 10px;
+}
+
+.recursos__celulares {
+	padding-top: 0px;
 }
 
 /* ========= Seção Serviços 2 ========= */
@@ -44,7 +69,7 @@ body {
 .img-logo {
 	height: 40px;
 	width: 132px;
-	display: block;
+	display: inline-block;
 	background: url('../imagens/spotify.svg') no-repeat;
 	background-size: contain;
 	color: transparent;
@@ -64,7 +89,7 @@ nav.navbar-transparente {
 	width: 1px;
 	height: 16px;
 	background: white;
-	margin: 16px 10px;
+	margin: 16px 0px;
 }
 
 .navbar-inverse .navbar-nav>li>a,
@@ -106,6 +131,7 @@ footer {
 /* ========= Tipografia ========= */
 h1 {
 	font-weight: 900;
+	font-size: 50px;
 	letter-spacing: 0.01em;
 	margin-bottom: 50px;
 }
@@ -129,13 +155,12 @@ h3 {
 }
 
 #rodape ul {
-	font-family: Arial, sans-serif;
+	font-family: Circular, Arial, sans-serif;
 }
 
 #servicos h2,
 #servicos h3 {
 	color: #7c25f8;
-
 }
 
 #servicos h3 {
@@ -144,7 +169,7 @@ h3 {
 
 p {
 	font-weight: 550;
-	font-family: Arial, sans-serif;
+	font-family: Circular, Arial, sans-serif;
 }
 
 #recursos h3 {
@@ -155,6 +180,7 @@ p {
 .btn-custom {
 	color: white;
 	padding: 10px 35px;
+	margin: 10px 15px;
 	text-transform: uppercase;
 	transition: background 0.4s, color 0.4s;
 	border-radius: 500px;
@@ -181,48 +207,30 @@ p {
 }
 
 /* ========= Media Queries ========= */
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-	h1 {
-		font-size: 50px;
-	}
-
-	.btn-custom {
-		margin: 10px 15px;
-	}
-
-	.test {
-		padding-bottom: 30px;
-	}
-
-	.test2 {
-		padding-bottom: 10px;
-	}
-
-	.test3 {
-		padding-top: 0px;
-	}
-}
-
 /* sm */
 @media screen and (min-width: 768px) {
 	h1 {
 		font-size: 70px;
 	}
 
+	.divisor {
+		align-self: center;
+		margin: 0 10px;
+	}
+
 	.btn-custom {
 		margin: 0px 15px;
 	}
 
-	.test {
+	.album:nth-child(even) {
 		padding-bottom: 30px;
 	}
 
-	.test2 {
+	.album:nth-child(odd) {
 		padding-bottom: 10px;
 	}
 
-	.test3 {
+	.recursos__celulares {
 		padding-top: 15px;
 	}
 }
@@ -233,15 +241,19 @@ p {
 		font-size: 80px;
 	}
 
-	.test {
+	.albuns {
+		flex-direction: row;
+	}
+
+	.album:nth-child(even) {
 		padding-bottom: 0px;
 	}
 
-	.test2 {
+	.album:nth-child(odd) {
 		padding-bottom: 0px;
 	}
 
-	.test3 {
+	.recursos__celulares {
 		padding-top: 30px;
 	}
 }
@@ -252,7 +264,7 @@ p {
 		font-size: 100px;
 	}
 
-	.test3 {
+	.recursos__celulares {
 		padding-top: 0px;
 	}
 }
