@@ -1,0 +1,18 @@
+{
+    "short_name": "Spotify2017",
+    "name": "Spotify2017",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "them-color": "#ffffff",
+    "background_color": "#000000",
+    "background-color": "#000000",
+    "description": "Página principal Spotify 2017",
+    "icons": [
+        {
+            "src": "imagens/logo-200px.png",
+            "type": "image/png",
+            "sizes": "200x200"
+        }
+    ]
+}
