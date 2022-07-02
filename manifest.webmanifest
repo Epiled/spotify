@@ -10,7 +10,7 @@
     "description": "Página principal Spotify 2017",
     "icons": [
         {
-            "src": "imagens/logo-200px.png",
+            "src": "imagens/logo-512px.png",
             "type": "image/png",
             "sizes": "200x200"
         }
