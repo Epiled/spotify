@@ -12,7 +12,14 @@
         {
             "src": "imagens/logo-512px.png",
             "type": "image/png",
-            "sizes": "200x200"
+            "sizes": "512x512",
+            "purpose": "any"
+        },
+        {
+            "src": "imagens/maskable_icon.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
         }
     ]
 }

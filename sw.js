@@ -7,7 +7,8 @@ self.addEventListener('install', function(event){
                 './',
                 './index.html',
                 './manifest.webmanifest',
-                './index.js'
+                './index.js',
+                './css/style.css'
             ])
         })
     )
@@ -22,7 +23,7 @@ self.addEventListener('fetch', async e => {
     const req = e.request
     const url = new URL(req.url)
 
-    if(url.origin == location.origin) {
+    if(url.origin === location.origin) {
         e.respondWith(cacheFirst(req))
     } else {
         e.respondWith(networkAndCache(req))
@@ -32,7 +33,7 @@ self.addEventListener('fetch', async e => {
 async function cacheFirst(req) {
     const cache = await caches.open(cacheName)
     const cached = await cache.match(req)
-
+    
     return cached || fetch(req)
 }
 
@@ -41,6 +42,7 @@ async function networkAndCache(req) {
     try {
         const refresh = await fetch(req)
         await cache.put(req, refresh.clone())
+
         return refresh
     } catch(e) {
         const cached = await cache.match(req)
