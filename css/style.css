@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Circular";
-	src: url('../font/Circular/CircularStd-Medium.otf');
+	src: url('../fonts/Circular/CircularStd-Medium.otf');
 	font-display: swap;
 }
 /* ========= Layout ========= */
@@ -12,8 +12,8 @@ body,
 }
 
 body {
-	background: url('../imagens/capa.webp'),
-		url('../imagens/ruido.webp'),
+	background: url('../imgs/capa.webp'),
+		url('../imgs/ruido.webp'),
 		linear-gradient(50deg, #ff4169, #7c26f8);
 	background-attachment: fixed;
 	font-family: Circular, Impact, Arial, sans-serif;
@@ -88,7 +88,7 @@ body {
 	height: 40px;
 	width: 132px;
 	display: inline-block;
-	background: url('../imagens/spotify.svg') no-repeat;
+	background: url('../imgs/spotify.svg') no-repeat;
 	background-size: contain;
 	color: transparent;
 }
