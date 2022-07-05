@@ -15,15 +15,22 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/navbar.css" rel="stylesheet">
+    <link href="./css/banner.css" rel="stylesheet">
+    <link href="./css/btn.css" rel="stylesheet">
+    <link href="./css/servicos.css" rel="stylesheet">
+    <link href="./css/recursos.css" rel="stylesheet">
+    <link href="./css/rodape.css" rel="stylesheet">
+    <link href="./css/mediaquerys.css" rel="stylesheet">
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-inverse navbar-transparente fixed-top ">
+    <nav class="navbar navbar-expand-md navbar-inverse fixed-top ">
       <div class="container-md container-fluid g-0">
         
         <!-- header -->
-          <a href="index.html" class="navbar-brand">
-            <span class="imgs-logo">Spotify</span>
+          <a href="index.html" class="navbar__brand">
+            <span class="logo">Spotify</span>
           </a>
 
           <!-- botao toggle-->
@@ -37,7 +44,7 @@
             <li class="nav-item"><a href="#" class="nav-link">Premium</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Baixar</a></li>
-            <li class="divisor" role="separetor"></li>
+            <li class="nav-item--divisor" role="separetor"></li>
             <li class="nav-item"><a href="#" class="nav-link">Inscrever-se</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Entrar</a></li>
           </ul>
@@ -46,40 +53,40 @@
       </div><!-- /container -->
     </nav>
 
-    <div class="capa">
-      <div class="texto-capa">
+    <div class="banner">
+      <div class="banner__texto">
         <h1>Música para todos</h1>
         <a href="#" class="btn btn-custom btn-roxo btn-lg">Aproveite o Spotify Free</a>
         <a href="#" class="btn btn-custom btn-branco btn-lg">Obter Spotify Premium</a>
       </div>
     </div>
 
-    <section id="servicos">
+    <section class="servicos">
       <div class="container">
         <div class="row">
 
             <div class="col-lg-6">
-              <div class="row albuns">
-                <div class="col-lg-6"><imgs src="imgs/imgs1.webp" class="imgs-responsive album" width="640" height="640" alt="Álbum Justin Bieber Purpose Amazon"></div>
-                <div class="col-lg-6"><imgs src="imgs/imgs2.webp" class="imgs-responsive album" width="640" height="640" alt="Álbum Zara Larsson Lush Life"></div>
+              <div class="row servicos__albuns">
+                <div class="col-lg-6"><img src="./imgs/img1.webp" class="img-responsive servicos__album" width="640" height="640" alt="Álbum Justin Bieber Purpose Amazon"></div>
+                <div class="col-lg-6"><img src="./imgs/img2.webp" class="img-responsive servicos__album" width="640" height="640" alt="Álbum Zara Larsson Lush Life"></div>
               </div>
-              <div class="row albuns">
-                <div class="col-lg-6"><imgs src="imgs/imgs3.webp" class="imgs-responsive album" width="640" height="640" alt="Álbum Justin Bieber Purpose Amazon"></div>
-                <div class="col-lg-6"><imgs src="imgs/imgs4.webp" class="imgs-responsive album" width="640" height="640" alt="Álbum Zara Larsson Lush Life"></div>
+              <div class="row servicos__albuns">
+                <div class="col-lg-6"><img src="./imgs/img3.webp" class="img-responsive servicos__album" width="640" height="640" alt="Álbum Justin Bieber Purpose Amazon"></div>
+                <div class="col-lg-6"><img src="./imgs/img4.webp" class="img-responsive servicos__album" width="640" height="640" alt="Álbum Zara Larsson Lush Life"></div>
               </div>
             </div>
             <div class="col-lg-6">
-              <h2>O quê o Spotify tem?</h2>
+              <h2 class="servico__titulo">O quê o Spotify tem?</h2>
 
-              <h3>Músicas</h3>
+              <h3 class="servico__subtitulo">Músicas</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lorem eget tortor consectetur fermentum.
               Proin non urna eros. Mauris mi mi, faucibus vel dui in, dapibus scelerisque velit.</p>
   
-              <h3>Playlist</h3>
+              <h3 class="servico__subtitulo">Playlist</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lorem eget tortor consectetur fermentum. Proin non urna eros.
               Mauris mi mi, faucibus vel dui in, dapibus scelerisque velit.</p>
   
-              <h3>Novos lançamentos</h3>
+              <h3 class="servico__subtitulo">Novos lançamentos</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lorem eget tortor consectetur fermentum. Proin non urna eros.
               Mauris mi mi, faucibus vel dui in, dapibus scelerisque velit.</p>
             </div>
@@ -88,35 +95,35 @@
       </div>
     </section>
 
-    <section id="recursos">
+    <section class="recursos">
       <div class="container">
         <div class="row ">
 
           <div class="col-lg-4">
             <h2>Fácil</h2>
 
-            <h3>Buscar</h3>
+            <h3 class="recursos__subtitulo">Buscar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lorem eget tortor consectetur fermentum.
             Proin non urna eros. Mauris mi mi, faucibus vel dui in, dapibus scelerisque velit.</p>
 
-            <h3>Navegar</h3>
+            <h3 class="recursos__subtitulo">Navegar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lorem eget tortor consectetur fermentum.
             Proin non urna eros. Mauris mi mi, faucibus vel dui in, dapibus scelerisque velit.</p>
 
-            <h3>Descobrir</h3>
+            <h3 class="recursos__subtitulo">Descobrir</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lorem eget tortor consectetur fermentum.
             Proin non urna eros. Mauris mi mi, faucibus vel dui in, dapibus scelerisque velit.</p>
           </div>
 
           <div class="col-lg-8">
-            <div class="row rotation recursos__celulares celulares">
+            <div class="row recursos__celulares">
 
               <div class="col-lg-6">
-                <imgs src="imgs/iphone1.webp" class="imgs-responsive" width="358" height="730" alt="Planningtorock - Let’s Talk About Gender Baby">
+                <img src="./imgs/iphone1.webp" class="img-responsive" width="358" height="730" alt="Planningtorock - Let’s Talk About Gender Baby">
               </div>
 
               <div class="col-lg-6">
-               <imgs src="imgs/iphone2.webp" class="imgs-responsive" width="358" height="730" alt="Playlist - Discovery Weekly">
+               <img src="./imgs/iphone2.webp" class="img-responsive" width="358" height="730" alt="Playlist - Discovery Weekly">
               </div>
 
             </div>
@@ -126,16 +133,16 @@
       </div>
     </section>
 
-    <footer id="rodape">
+    <footer class="rodape">
       <div class="container">
         <div class="row">
 
-          <div class="col-md-2">
-            <span class="imgs-logo">Spotify</span>
+          <div class="col-lg-2 rodape__grupo">
+            <span class="logo">Spotify</span>
           </div>
 
-          <div class="col-md-2">
-            <h4>Company</h4>
+          <div class="col-lg-2 rodape__grupo">
+            <h4 class="rodape__titulo">Company</h4>
             <ul class="nav list-group">
               <li class="rodape__item"><a class="rodape__link" href="#">Sobre</a></li>
               <li class="rodape__item"><a class="rodape__link" href="#">Empregos</a></li>
@@ -144,8 +151,8 @@
             </ul>
           </div>
 
-          <div class="col-md-2">
-            <h4>Comunidades</h4>
+          <div class="col-lg-2 rodape__grupo">
+            <h4 class="rodape__titulo">Comunidades</h4>
             <ul class="nav list-group">
               <li class="rodape__item"><a class="rodape__link" href="#">Artistas</a></li>
               <li class="rodape__item"><a class="rodape__link" href="#">Desenvolvedores</a></li>
@@ -153,8 +160,8 @@
             </ul> 
           </div>
 
-          <div class="col-md-2">
-            <h4>Links Uteis</h4>
+          <div class="col-lg-2 rodape__grupo">
+            <h4 class="rodape__titulo">Links Uteis</h4>
             <ul class="nav list-group">
               <li class="rodape__item"><a class="rodape__link" href="#">Ajuda</a></li>
               <li class="rodape__item"><a class="rodape__link" href="#">Presentes</a></li>
@@ -162,11 +169,11 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
-            <ul class="nav justify-content-end">
-              <li class="alinhar rodape__item"><a href="#"><imgs src="./imgs/facebook.webp" width="54" height="54" alt="Logo Facebook"></a></li>
-              <li class="alinhar rodape__item"><a href="#"><imgs src="./imgs/instagram.webp" width="54" height="54" alt="Logo Instagram"></a></li>
-              <li class="alinhar rodape__item"><a href="#"><imgs src="./imgs/twitter.webp" width="54" height="54" alt="Logo Twitter"></a></li>
+          <div class="col-lg-4 rodape__grupo">
+            <ul class="nav justify-content-lg-end">
+              <li class="rodape__item rodape__item--flutuante"><a href="#"><img src="./imgs/facebook.webp" width="54" height="54" alt="Logo Facebook"></a></li>
+              <li class="rodape__item rodape__item--flutuante"><a href="#"><img src="./imgs/instagram.webp" width="54" height="54" alt="Logo Instagram"></a></li>
+              <li class="rodape__item rodape__item--flutuante"><a href="#"><img src="./imgs/twitter.webp" width="54" height="54" alt="Logo Twitter"></a></li>
             </ul>
           </div>
 

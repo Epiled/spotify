@@ -3,10 +3,9 @@
 	src: url('../fonts/Circular/CircularStd-Medium.otf');
 	font-display: swap;
 }
-/* ========= Layout ========= */
+
 html,
-body,
-.capa {
+body {
 	height: 100%;
 	overflow: auto;
 }
@@ -20,71 +19,7 @@ body {
 	overflow-x: hidden;
 }
 
-/* ========= Seção Serviços ========= */
-#servicos {
-	background: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.albuns {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px 0px 10px 0px;
-}
-
-.album {
-	width: 100%;
-    height: auto;
-}
-
-.album:nth-child(even) {
-	padding-bottom: 30px;
-}
-
-.album:nth-child(odd) {
-	padding-bottom: 10px;
-}
-
-.recursos__celulares {
-	padding-top: 0px;
-}
-
-.img-responsive{
-	display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.celulares::before {
-	display: table;
-	content: "";
-}
-
-.celulares::after {
-	content: "";
-	clear: both;
-}
-
-/* ========= Seção Serviços 2 ========= */
-.rotation {
-	transform: rotate(30deg);
-	-ms-transform: rotate(30deg);
-	-webkit-transform: rotate(30deg);
-	padding-left: 80px;
-}
-
-#recursos {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: white;
-}
-
-
-
-/* ========= Barra de Navegação ========= */
-.img-logo {
+.logo {
 	height: 40px;
 	width: 132px;
 	display: inline-block;
@@ -93,88 +28,12 @@ body {
 	color: transparent;
 }
 
-nav.navbar-transparente {
-	padding: 15px 0px;
-	background: rgba(0, 0, 0, 0.6);
-	border: none;
+.responsive{
+	display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.navbar-brand {
-	padding: 5px 7px;
-}
-
-.navbar-collapse {
-	padding: 10px 15px 0 15px;
-	border-top: 1px solid #101010;
-	box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%)
-}
-
-.navbar-toggler {
-	border-color: #333;
-	width: 44px;
-	height: 34px;
-	padding: 0;
-	border-radius: 4px;
-	margin-right: 15px;
-}
-
-.navbar-toggler:focus {
-	box-shadow: none;
-	background-color: #333;
-}
-
-.divisor {
-	width: 1px;
-	height: 16px;
-	background: white;
-	margin: 16px 0px;
-}
-
-.navbar-inverse .navbar-nav>li>a,
-footer .nav a {
-	color: white;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover,
-footer .nav a:hover {
-	color: #9bf0e1;
-	background: none;
-}
-
-/* ========= Imagem da Capa ========= */
-.capa {
-	/*border: 1px solid red;*/
-	display: table;
-	width: 100%;
-}
-
-.texto-capa {
-	text-align: center;
-	color: white;
-	display: table-cell;
-	vertical-align: middle;
-}
-
-/* ========= Rodape ========= */
-footer {
-	background: #000;
-	padding: 50px 0px 20px 0px;
-	position: relative;
-}
-
-.alinhar {
-	float: right;
-}
-
-.rodape__item {
-	padding: 10px 15px;
-}
-
-.rodape__link {
-	text-decoration: none;
-}
-
-/* ========= Tipografia ========= */
 h1 {
 	font-weight: 900;
 	font-size: 50px;
@@ -194,131 +53,8 @@ h3 {
 	letter-spacing: 0.00em;
 }
 
-#rodape h4 {
-	color: #919496;
-	font-size: 15px;
-	text-transform: uppercase;
-}
-
-#rodape ul {
-	font-family: Circular, Arial, sans-serif;
-}
-
-#servicos h2,
-#servicos h3 {
-	color: #7c25f8;
-}
-
-#servicos h3 {
-	padding-top: 10px;
-}
-
 p {
 	font-weight: 550;
 	font-family: Circular, Arial, sans-serif;
 	line-height: 20px;
 }
-
-#recursos h3 {
-	color: #9bf0e1;
-}
-
-/* ========= Botões ========= */
-.btn-custom {
-	color: white;
-	padding: 10px 35px;
-	margin: 10px 15px;
-	text-transform: uppercase;
-	transition: background 0.4s, color 0.4s;
-	border-radius: 500px;
-	-webkit-border-radius: 500px;
-	-moz-border-radius: 500px;
-}
-
-.btn-roxo {
-	background: #7c25f8;
-}
-
-.btn-roxo:hover {
-	background: #6207e3;
-	color: white;
-}
-
-.btn-branco {
-	border: 2px solid white;
-}
-
-.btn-branco:hover {
-	background: white;
-	color: black;
-}
-
-/* ========= Media Queries ========= */
-/* sm */
-@media screen and (min-width: 768px) {
-	h1 {
-		font-size: 70px;
-	}
-
-	.navbar-collapse {
-		border: 0;
-		box-shadow: none;
-	}
-
-	.divisor {
-		align-self: center;
-		margin: 0 10px;
-	}
-
-	.btn-custom {
-		margin: 0px 15px;
-	}
-
-	.album:nth-child(even) {
-		padding-bottom: 30px;
-	}
-
-	.album:nth-child(odd) {
-		padding-bottom: 10px;
-	}
-
-	.recursos__celulares {
-		padding-top: 15px;
-	}
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-	h1 {
-		font-size: 80px;
-	}
-
-	.albuns {
-		flex-direction: row;
-	}
-
-	.album:nth-child(even) {
-		padding-bottom: 0px;
-	}
-
-	.album:nth-child(odd) {
-		padding-bottom: 0px;
-	}
-
-	.recursos__celulares {
-		padding-top: 30px;
-	}
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-	h1 {
-		font-size: 100px;
-	}
-
-	.recursos__celulares {
-		padding-top: 0px;
-	}
-}
-
-/* Fim Media Queries */
