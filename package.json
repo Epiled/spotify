@@ -1,0 +1,33 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "Automatizador de processos",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp-teste"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Epiled/Spotify.git"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "Felipe De Andrade Mendonça",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Epiled/Spotify/issues"
+  },
+  "homepage": "https://github.com/Epiled/Spotify#readme",
+  "devDependencies": {
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-string-replace": "^1.1.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "gulp-webp": "^4.0.1"
+  }
+}
