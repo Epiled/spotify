@@ -1,0 +1,34 @@
+.servicos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.servicos__albuns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.servicos__albuns:nth-child(even) {
+	padding-bottom: 10px;
+}
+
+.servicos__albuns:nth-child(odd) {
+	padding-top: 10px;
+}
+
+.servicos__album {
+	width: 100%;
+    height: auto;
+	padding-bottom: 10px;
+}
+
+.servico__titulo {
+	color: #7c25f8;
+}
+
+.servico__subtitulo {
+	color: #7c25f8;
+	padding-top: 10px;
+}

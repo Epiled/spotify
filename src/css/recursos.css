@@ -1,0 +1,17 @@
+.recursos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.recursos__subtitulo {
+	color: #9bf0e1;
+}
+
+.recursos__celulares {
+    padding-top: 0px;
+	padding-left: 80px;
+    transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
