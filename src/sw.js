@@ -1,4 +1,6 @@
-const cacheName = 'Spotify2017'
+const cacheName = 'Spotify2017';
+
+const versao = 4;
 
 self.addEventListener('install', function(event){
     event.waitUntil(
@@ -12,8 +14,8 @@ self.addEventListener('install', function(event){
             ])
         })
     )
-    return self.skipWaiting()
-})
+    return self.skipWaiting();
+});
 
 self.addEventListener("fetch", event => {
     event.respondWith(

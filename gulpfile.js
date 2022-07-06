@@ -39,9 +39,14 @@ gulp.task('usemin-replace', async function () {
 })
 
 gulp.task('convert-webp', async function () {
-    return gulp.src('src/imgs/**/*')
+    return gulp.src(['src/imgs/*', '!src/imgs/pwa/*'])
         .pipe(webp())
-        .pipe(gulp.dest('dist/imgs'))
+        .pipe(gulp.dest('dist/imgs'));
+})
+
+gulp.task('move-pwa-imagens', async function () {
+    return gulp.src('src/imgs/pwa/**/*')
+        .pipe(gulp.dest('dist/imgs/pwa'));
 })
 
 gulp.task('default', gulp.series('copy'));
@@ -51,5 +56,7 @@ gulp.task('build', gulp.series(
         'static-files',
          parallel(
             'usemin-replace', 
-            'convert-webp'))
+            'convert-webp',
+            'move-pwa-imagens',
+            ))
         );
