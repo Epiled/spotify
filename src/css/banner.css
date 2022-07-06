@@ -8,6 +8,4 @@
 .banner__texto {
 	text-align: center;
 	color: white;
-	display: table-cell;
-	vertical-align: middle;
 }
