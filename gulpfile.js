@@ -22,9 +22,9 @@ gulp.task('static-files', async function () {
     return gulp.src([
             'src/**/*',
             '!src/**/*.html',
-            '!src/css/**/*.css',
-            '!src/js/**/*.js',
-            '!src/imgs/**/*'])
+            '!src/assets/css/**/*.css',
+            '!src/assets/js/**/*.js',
+            '!src/assets/imgs/**/*'])
             .pipe(gulp.dest('dist'));
 })
 
@@ -39,14 +39,14 @@ gulp.task('usemin-replace', async function () {
 })
 
 gulp.task('convert-webp', async function () {
-    return gulp.src(['src/imgs/*', '!src/imgs/pwa/*'])
+    return gulp.src(['src/assets/imgs/*', '!src/assets/imgs/pwa/*'])
         .pipe(webp())
-        .pipe(gulp.dest('dist/imgs'));
+        .pipe(gulp.dest('dist/assets/imgs'));
 })
 
 gulp.task('move-pwa-imagens', async function () {
-    return gulp.src('src/imgs/pwa/**/*')
-        .pipe(gulp.dest('dist/imgs/pwa'));
+    return gulp.src('src/assets/imgs/pwa/**/*')
+        .pipe(gulp.dest('dist/assets/imgs/pwa'));
 })
 
 gulp.task('default', gulp.series('copy'));
