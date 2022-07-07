@@ -24,7 +24,8 @@ gulp.task('static-files', async function () {
             '!src/**/*.html',
             '!src/assets/css/**/*.css',
             '!src/assets/js/**/*.js',
-            '!src/assets/imgs/**/*'])
+            '!src/assets/imgs/**/*',
+            'src/**/*favicon.png',])
             .pipe(gulp.dest('dist'));
 })
 
@@ -39,7 +40,7 @@ gulp.task('usemin-replace', async function () {
 })
 
 gulp.task('convert-webp', async function () {
-    return gulp.src(['src/assets/imgs/*', '!src/assets/imgs/pwa/*'])
+    return gulp.src(['src/assets/imgs/*', '!src/assets/imgs/pwa/*', '!src/assets/imgs/favicon.png'])
         .pipe(webp())
         .pipe(gulp.dest('dist/assets/imgs'));
 })
