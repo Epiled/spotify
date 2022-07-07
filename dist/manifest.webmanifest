@@ -10,13 +10,13 @@
     "description": "Página principal Spotify 2017",
     "icons": [
         {
-            "src": "imgs/pwa/spotify_icone_512.png",
+            "src": "assets/pwa/spotify_icone_512.png",
             "type": "image/png",
             "sizes": "512x512",
             "purpose": "any"
         },
         {
-            "src": "imgs/pwa/maskable_icon.png",
+            "src": "assets/imgs/pwa/maskable_icon.png",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "maskable"
