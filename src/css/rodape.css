@@ -8,7 +8,7 @@
 	padding-bottom: 50px;
 }
 
-.rodape__grupo:last-of-type {
+.rodape__grupo:last-child {
 	padding-bottom: 0;
 }
 
