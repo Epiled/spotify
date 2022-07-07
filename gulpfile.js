@@ -34,7 +34,7 @@ gulp.task('usemin-replace', async function () {
             'js' : [uglify],
             'css' : [cssmin]
         }))
-        .pipe(replace(/\.(png|jpg|jpeg|tiff)+/g, '.webp'))
+        .pipe(replace(/(\.(png|jpg|jpeg|tiff))+(?<!(favicon\.png|app_icon\.png))/g, '.webp'))
         .pipe(gulp.dest('dist'));
 })
 
