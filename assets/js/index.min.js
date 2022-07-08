@@ -1,0 +1,1 @@
+async function registerSW(){if("serviceWorker"in navigator)try{await navigator.serviceWorker.register("./sw.js")}catch(r){console.error("SW registration failed")}}window.addEventListener("load",()=>{registerSW()});
