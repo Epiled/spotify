@@ -33,7 +33,7 @@
 	background-size: 22px;
 }
 
-.nav-item--divisor {
+.nav__divisor {
 	width: 1px;
 	height: 16px;
 	background: white;
