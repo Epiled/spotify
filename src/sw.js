@@ -1,6 +1,6 @@
 const cacheName = 'Spotify 2017';
 
-const versao = 5;
+const versao = 31;
 
 self.addEventListener('install', function(event){
     event.waitUntil(
@@ -11,6 +11,8 @@ self.addEventListener('install', function(event){
                 './manifest.webmanifest',
                 './assets/css/style.min.css',
                 './assets/js/index.min.js',
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css',
+                'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js',
 
                 './assets/fonts/Circular/CircularStd-Medium.otf',
 
@@ -27,6 +29,7 @@ self.addEventListener('install', function(event){
                 './assets/imgs/playlist-discovery-weekly.webp',
                 './assets/imgs/facebook.webp',
                 './assets/imgs/instagram.webp',
+                './assets/imgs/twitter.webp',
                 './assets/imgs/pwa/app_icon.png',
                 './assets/imgs/pwa/maskable_icon.png',
                 './assets/imgs/pwa/spotify_icone_512.png',
@@ -39,8 +42,8 @@ self.addEventListener('install', function(event){
 self.addEventListener("fetch", event => {
     event.respondWith(
       caches.match(event.request)
-      .then(cachedResponse => {
-          return cachedResponse || fetch(event.request);
+        .then(cachedResponse => {
+            return cachedResponse || fetch(event.request);
       }
     )
    )
