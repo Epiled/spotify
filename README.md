@@ -51,14 +51,14 @@ alem disso o projeto passou por otimizações afim de obter melhores resultados 
 
 ![performance_git](https://user-images.githubusercontent.com/55258483/178336165-ac494962-72e9-450e-8be3-761e590fd058.png)
 
-<h2 id="instalacao"> Instalação </h2>
+<h2 id="instalacao"> ⚙ Instalação </h2>
 
 ```
 1. git clone https://github.com/Epiled/Spotify.git
 2. cd Spotify
 ```
 
-<h2 id="como-usar"> Como usar </h2>
+<h2 id="como-usar"> 👩‍🏫 Como usar </h2>
 
 <h3 id="arquivos_locais">Arquivos Locais</h3>
 <p>Nesse ponto o projeto já pode ser executado no navegador através do arquivo "index.html" tanto na pasta "src" quanto na "dist"</p>
