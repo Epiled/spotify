@@ -17,6 +17,7 @@ alem disso o projeto passou por otimizações afim de obter melhores resultados 
 ![Badge](https://img.shields.io/github/languages/count/Epiled/barril-de-cerveja?style=for-the-badge)
 ![Bagde](https://img.shields.io/badge/repo%20status-Beta-cyan?style=for-the-badge)
 ![Bagde](https://img.shields.io/github/v/release/epiled/Spotify?style=for-the-badge)
+![Bagde](https://img.shields.io/github/license/Epiled/Spotify?style=for-the-badge)
 
 ![Badge](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Badge](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
