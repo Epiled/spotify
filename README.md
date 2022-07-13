@@ -12,9 +12,9 @@
 alem disso o projeto passou por otimizações afim de obter melhores resultados de performance.
 </p>
 
-![Badge](https://img.shields.io/github/last-commit/Epiled/barril-de-cerveja?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/code-size/Epiled/barril-de-cerveja?style=for-the-badge)
-![Badge](https://img.shields.io/github/languages/count/Epiled/barril-de-cerveja?style=for-the-badge)
+![Badge](https://img.shields.io/github/last-commit/Epiled/Spotify?style=for-the-badge)
+![Badge](https://img.shields.io/github/languages/code-size/Epiled/Spotify?style=for-the-badge)
+![Badge](https://img.shields.io/github/languages/count/Epiled/Spotify?style=for-the-badge)
 ![Bagde](https://img.shields.io/badge/repo%20status-Beta-cyan?style=for-the-badge)
 ![Bagde](https://img.shields.io/github/v/release/epiled/Spotify?style=for-the-badge)
 ![Bagde](https://img.shields.io/github/license/Epiled/Spotify?style=for-the-badge)
