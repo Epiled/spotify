@@ -50,7 +50,7 @@ alem disso o projeto passou por otimizações afim de obter melhores resultados 
 
 <h2 id="performance"> 📈 Performance Lighthouse </h2>
 
-![performance_git](https://user-images.githubusercontent.com/55258483/178336165-ac494962-72e9-450e-8be3-761e590fd058.png)
+![spotify_performance](https://user-images.githubusercontent.com/55258483/179237352-2a90c312-8c28-4ec5-a214-205956bf1e21.png)
 
 <h2 id="instalacao"> ⚙ Instalação </h2>
 
