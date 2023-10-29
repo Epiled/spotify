@@ -43,7 +43,7 @@ alem disso o projeto passou por otimizações afim de obter melhores resultados 
 <h2 id="demonstracao"> 👀 Demonstração </h2>
 
 <p>No link abaixo você pode ver a página no ar e rodar seus próprios teste de perfomance ou desempenho</p>
-<p>Spotify: <a href="epiled.github.io/spotify/">epiled.github.io/spotify/</a></p>
+<p>Spotify: <a target="_blank" href="epiled.github.io/spotify/">epiled.github.io/spotify/</a></p>
 
 ![spotify_desktop](https://user-images.githubusercontent.com/55258483/178335246-2bbf5a76-9d7a-4594-a7ed-49df254586a9.gif)
 ![spotify_mobile](https://user-images.githubusercontent.com/55258483/178335669-263d3077-5bcd-40dd-9753-bb059217c750.gif)
